@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
-export default () => {
+const LoginScreen = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log(e.target[0].value, e.target[1].value);
@@ -142,3 +142,5 @@ const FooterText = styled.h1`
   font-size: 36px;
   color: green;
 `;
+
+export default LoginScreen;
